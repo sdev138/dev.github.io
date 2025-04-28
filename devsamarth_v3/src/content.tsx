@@ -96,6 +96,7 @@ const workExperience = [
 const dataportfolio = [
   {
     title: "DEVim",
+    image: devimImage,
     description:
       "A custom neovim distribution with a focus on developer experience and productivity.",
     technologies: ["Neovim", "Lua", "GitHub", "Vimscript"],
@@ -103,6 +104,7 @@ const dataportfolio = [
   },
   {
     title: "RepoReccomender AI",
+    image: devimImage,
     description:
       "A web application that uses machine learning to recommend GitHub repositories based on user goals and preferences.",
     technologies: ["TypeScript", "JavaScript", "CSS", "HTML", "React"],
@@ -110,6 +112,7 @@ const dataportfolio = [
   },
   {
     title: "Personal Portfolio",
+    image: devimImage,
     description:
       "A personal portfolio website to showcase my projects and skills.",
     technologies: ["JavaScript", "CSS", "HTML", "React"],
@@ -117,6 +120,7 @@ const dataportfolio = [
   },
   {
     title: "Leetcode Solutions",
+    image: devimImage,
     description:
       "A collection of my solutions to Leetcode problems for students and prospective SWE's to study",
     technologies: ["Python", "C++"],
@@ -124,6 +128,7 @@ const dataportfolio = [
   },
   {
     title: "Advent of Code Solutions",
+    image: devimImage,
     description:
       "A collection of my solutions to Advent of Code problems for students and prospective SWE's to study",
     technologies: ["Go-lang", "Rust"],
@@ -131,6 +136,7 @@ const dataportfolio = [
   },
   {
     title: "Deep ML Solutions",
+    image: devimImage,
     description:
       "A collection of my solutions to Deep-ML problems for students and prospective SWE's to study",
     technologies: ["Python"],
