@@ -429,3 +429,9 @@ section {
     border-radius: 20px;
     font-size: 0.8rem;
 }
+
+.repo-image {
+    width: 320px;
+    height: auto;
+    border-radius: 8px;
+}

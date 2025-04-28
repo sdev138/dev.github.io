@@ -187,6 +187,12 @@ function App() {
           {dataportfolio.map((project, index) => (
             <div key={index} className="project-card">
               <h3>{project.title}</h3>
+              {/* Would probably delete, trying to install image */}
+              <img
+                src={project.image}
+                alt="repo image"
+                className="repo-image"
+              />
               <p>{project.description}</p>
               <div className="tech-stack">
                 {project.technologies.map((tech, techIndex) => (
