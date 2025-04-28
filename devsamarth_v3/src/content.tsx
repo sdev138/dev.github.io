@@ -26,11 +26,16 @@ const introdata = {
 };
 
 const dataabout = {
-  title: "Research Interests",
+  title: "research interests",
   aboutme:
     "My primary research focus in on the development of AI tools, to enhance the productivity and accessibility of different devices for the general public. This includes improving the UI/UX of headsets, to be deployed in a Navy ship in the Pacific Ocean. It isn't just productivity and efficiency of machine learning programs that interests me, but also the understanding and replication of human intelligence and creativity. To understand our minds and the development of critical thinking, has a greater impact on the overall creativity of a person. Since the dawn of the Personal Computer Revolution, this has consisted of molding the general public to adopt devices. My research involves understanding the human condition, to mold devices to truly improve the daily lives of the public, as well as enhancing and improving human creativity.",
 };
 const worktimeline = [
+  {
+    jobtitle: "Arizona State University",
+    where: "M.S. Computer Science",
+    date: "August 2025 - May 2027",
+  },
   {
     jobtitle: "Arizona State University",
     where: "B.S. Computer Science",
@@ -88,21 +93,47 @@ const workExperience = [
 
 const dataportfolio = [
   {
-    img: devimImage,
-    description: "Neovim distribution",
-    link: "https://github.com/sdev138/DEVim",
+    title: "DEVim",
+    description:
+      "A custom neovim distribution with a focus on developer experience and productivity.",
+    technologies: ["Neovim", "Lua", "GitHub"],
+    url: "https://github.com/sdev138/DEVim",
   },
   {
-    img: "",
-    description: "Linux Kernel",
-    link: "",
+    title: "RepoReccomender AI",
+    description:
+      "A web application that uses machine learning to recommend GitHub repositories based on user goals and preferences.",
+    technologies: ["TypeScript", "JavaScript", "CSS", "HTML"],
+    url: "https://github.com/sdev138/Repo-Recommender-AI",
   },
-  // Example Input for data portfolio
-  // {
-  //     img: "https://picsum.photos/400/700/?grayscale",
-  //     description: "The wisdom of life consists in the elimination of non-essentials.",
-  //     link: "#",
-  // },
+  {
+    title: "Personal Portfolio",
+    description:
+      "A personal portfolio website to showcase my projects and skills.",
+    technologies: ["JavaScript", "CSS", "HTML"],
+    url: "https://devsamarth.com",
+  },
+  {
+    title: "Leetcode Solutions",
+    description:
+      "A collection of my solutions to Leetcode problems for students and prospective SWE's to study",
+    technologies: ["Python", "C++"],
+    url: "https://github.com/sdev138/Leetcode_Solutions",
+  },
+  {
+    title: "Advent of Code Solutions",
+    description:
+      "A collection of my solutions to Advent of Code problems for students and prospective SWE's to study",
+    technologies: ["Go-lang", "Rust"],
+    url: "https://github.com/sdev138/Advent-of-Code",
+  },
+  {
+    title: "Deep ML Solutions",
+    description:
+      "A collection of my solutions to Deep-ML problems for students and prospective SWE's to study",
+    technologies: ["Python"],
+    url: "https://github.com/sdev138/Deep-ML-Solutions",
+  },
 ];
 
 const contactConfig = {
