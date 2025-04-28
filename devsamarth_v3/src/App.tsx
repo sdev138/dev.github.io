@@ -22,7 +22,7 @@ import {
 } from "./content.tsx";
 
 function App() {
-  console.log("In the app function");
+  console.log("Beginning of the app function");
   return (
     // console.log("In the return statement");
     <HelmetProvider>
@@ -97,21 +97,11 @@ function App() {
             <title> About | {meta.title}</title>
             <meta name="description" content={meta.description} />
           </Helmet>
+          {/* About Me title */}
           <Row className="mb-5 mt-3 pt-md-3">
             <Col lg="8">
               <h1 className="display-4 mb-4">About me</h1>
               <hr className="t_border my-4 ml-0 text-left" />
-            </Col>
-          </Row>
-          {/* About Me title */}
-          <Row className="sec_sp">
-            <Col lg="5">
-              <h3 className="color_sec py-4">{dataabout.title}</h3>
-            </Col>
-            <Col lg="7" className="d-flex align-items-center">
-              <div>
-                <p>{dataabout.aboutme}</p>
-              </div>
             </Col>
           </Row>
           {/* Education (University) */}
@@ -119,7 +109,7 @@ function App() {
             <Col lg="5">
               <h3 className="color_sec py-4">
                 <a
-                  href="https://example.com/education"
+                  href="https://www.asu.edu"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -177,8 +167,52 @@ function App() {
               })}
             </Col>
           </Row>
+          {/* Research Interests */}
+          <Row className="sec_sp">
+            <Col lg="5">
+              <h3 className="color_sec py-4">{dataabout.title}</h3>
+            </Col>
+            <Col lg="7" className="d-flex align-items-center">
+              <div>
+                <p>{dataabout.aboutme}</p>
+              </div>
+            </Col>
+          </Row>
         </Container>
       </section>
+      {/* Projects sections */}
+      <section id="projects" className="projects">
+        <h2 className="sec_sp">Projects</h2>
+        <div className="projects-grid">
+          {dataportfolio.map((project, index) => (
+            <div key={index} className="project-card">
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+              <div className="tech-stack">
+                {project.technologies.map((tech, techIndex) => (
+                  <span key={techIndex} className="tech-tag">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+      <section id="contact-me" className="contactMe">
+        <p>Feel free to contact me</p>
+        <ul>
+          <li>Email: Samarth Dev</li>
+          <li>Linkedin</li>
+          <li>Github</li>
+          <li>BlueSky</li>
+          <li>Twitter</li>
+        </ul>
+      </section>
+      <br />
+      <br />
+      <br />
+      <br />
     </HelmetProvider>
   );
 }
