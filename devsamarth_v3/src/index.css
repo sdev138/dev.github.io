@@ -31,7 +31,8 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     /* font-family: "Raleway", sans-serif; */
-    font-family: Fira Code;
+    /* font-family: Fira Code; */
+    font-family: Roboto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     padding-top: 60px;
@@ -49,7 +50,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Fira Code;
+    /* font-family: Fira Code; */
+    font-family: Roboto;
 }
 
 a,
