@@ -17,7 +17,7 @@ const introdata = {
     third: "Human Computer Interaction",
     fourth: "AI Researcher",
     fifth: "Tennis Player",
-    sixth: "Obsessed F1 Fan (Forza Ferrari && Team LH)",
+    sixth: "Forza Ferrari && Forza Lewis Hamilton",
   },
   description:
     "Currently looking for software engineering internships. Previously worked at a startup called AstroSeed as a Machine Learning Engineer. Created a recognition agent that can calculate the health of a plant.",
@@ -98,21 +98,21 @@ const dataportfolio = [
     title: "DEVim",
     description:
       "A custom neovim distribution with a focus on developer experience and productivity.",
-    technologies: ["Neovim", "Lua", "GitHub"],
+    technologies: ["Neovim", "Lua", "GitHub", "Vimscript"],
     url: "https://github.com/sdev138/DEVim",
   },
   {
     title: "RepoReccomender AI",
     description:
       "A web application that uses machine learning to recommend GitHub repositories based on user goals and preferences.",
-    technologies: ["TypeScript", "JavaScript", "CSS", "HTML"],
+    technologies: ["TypeScript", "JavaScript", "CSS", "HTML", "React"],
     url: "https://github.com/sdev138/Repo-Recommender-AI",
   },
   {
     title: "Personal Portfolio",
     description:
       "A personal portfolio website to showcase my projects and skills.",
-    technologies: ["JavaScript", "CSS", "HTML"],
+    technologies: ["JavaScript", "CSS", "HTML", "React"],
     url: "https://devsamarth.com",
   },
   {
@@ -142,19 +142,15 @@ const contactConfig = {
   YOUR_EMAIL: "samarthdev138@gmail.com",
   github: "https://github.com/sdev138",
   linkedin: "https://www.linkedin.com/in/samarth-dev/",
-  YOUR_FONE: "",
   description: "Feel free to contact me and keep in touch ✌🏾",
-  // creat an emailjs.com account
-  // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-  YOUR_SERVICE_ID: "service_id",
-  YOUR_TEMPLATE_ID: "template_id",
-  YOUR_USER_ID: "user_id",
 };
 
 const socialprofils = {
   github: "https://github.com/sdev138",
   linkedin: "https://www.linkedin.com/in/samarth-dev/",
   scholar: "https://scholar.google.com/citations?user=ByJ5jz4AAAAJ&hl=en",
+  bluesky: "",
+  twitter: "",
 };
 
 export {
