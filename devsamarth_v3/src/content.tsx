@@ -2,6 +2,7 @@ import sdevImage from "./assets/sdevCropped.jpg";
 import devimImage from "./assets/DEVim.png";
 
 const logoText = "Samarth Dev";
+
 const meta = {
   title: "Samarth Dev",
   description: "I am a Software Engineer working in Sunnyvale, CA",
@@ -30,6 +31,7 @@ const dataabout = {
   aboutme:
     "My primary research focus in on the development of AI tools, to enhance the productivity and accessibility of different devices for the general public. This includes improving the UI/UX of headsets, to be deployed in a Navy ship in the Pacific Ocean. It isn't just productivity and efficiency of machine learning programs that interests me, but also the understanding and replication of human intelligence and creativity. To understand our minds and the development of critical thinking, has a greater impact on the overall creativity of a person. Since the dawn of the Personal Computer Revolution, this has consisted of molding the general public to adopt devices. My research involves understanding the human condition, to mold devices to truly improve the daily lives of the public, as well as enhancing and improving human creativity.",
 };
+
 const worktimeline = [
   {
     jobtitle: "Arizona State University",
