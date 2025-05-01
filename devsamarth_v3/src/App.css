@@ -361,6 +361,30 @@ section {
     padding-bottom: 4px;
 }
 
+/* These 4 css attributes were generated to solve problem */
+.About-header {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+  
+.service_ {
+    background: var(--bg-color);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+  
+.service__title {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+  
+.service_desc {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
 /*! CSS Used keyframes */
 
 @-webkit-keyframes fadeInUp {
@@ -400,9 +424,13 @@ section {
 }
 
 .project-card {
-    background-color: #1a1a1a;
+    /* background-color: #1a1a1a; */
+    background-color: #0c0c0c;
+    border: 3px solid var(--text-color);
+    border-color: #ffffff;
     padding: 2rem;
-    border-radius: 5px;
+    /* Formerly 45px */
+    border-radius: 50px;
     transition: transform 0.3s ease;
 }
 
@@ -425,6 +453,7 @@ section {
 
 .tech-tag {
     background-color: #333;
+    border-color: #ffffff;
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
     font-size: 0.8rem;

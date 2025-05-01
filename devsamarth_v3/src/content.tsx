@@ -14,10 +14,11 @@ const introdata = {
   animated: {
     first: "Software Engineer Intern",
     second: "Machine Learning Engineer",
-    third: "Human Computer Interaction",
+    third: "Human Computer Interactions",
     fourth: "AI Researcher",
     fifth: "Tennis Player",
-    sixth: "Forza Ferrari && Forza Lewis Hamilton",
+    sixth: "Forza Ferrari",
+    seventh: "Forza Lewis Hamilton",
   },
   description:
     "Currently looking for software engineering internships. Previously worked at a startup called AstroSeed as a Machine Learning Engineer. Created a recognition agent that can calculate the health of a plant.",
@@ -46,7 +47,6 @@ const worktimeline = [
 ];
 
 const researcherExperience = [
-  {},
   {
     title: "National Security Innovation Network - Machine Learning Researcher",
     period: "January 2022 - May 2023",
@@ -106,7 +106,7 @@ const dataportfolio = [
     title: "RepoReccomender AI",
     image: devimImage,
     description:
-      "A web application that uses machine learning to recommend GitHub repositories based on user goals and preferences.",
+      "A web application that uses machine learning to recommend GitHub repositories based on a users goals and preferences.",
     technologies: ["TypeScript", "JavaScript", "CSS", "HTML", "React"],
     url: "https://github.com/sdev138/Repo-Recommender-AI",
   },
