@@ -1,5 +1,10 @@
 import sdevImage from "./assets/sdevCropped.jpg";
 import devimImage from "./assets/DEVim.png";
+import deepMLImage from "./assets/deep-ml.jpg";
+import aocImage from "./assets/advent_of_code_logo.jpeg";
+import leetImage from "./assets/leetcode.png";
+import repoRecallImage from "./assets/RepoRecallImage.jpg";
+import personalPortImage from "./assets/PersonalPortfolioImage.png";
 
 const logoText = "Samarth Dev";
 
@@ -103,8 +108,8 @@ const dataportfolio = [
     url: "https://github.com/sdev138/DEVim",
   },
   {
-    title: "RepoReccomender AI",
-    image: devimImage,
+    title: "RepoRecall AI",
+    image: repoRecallImage,
     description:
       "A web application that uses machine learning to recommend GitHub repositories based on a users goals and preferences.",
     technologies: ["TypeScript", "JavaScript", "CSS", "HTML", "React"],
@@ -112,7 +117,7 @@ const dataportfolio = [
   },
   {
     title: "Personal Portfolio",
-    image: devimImage,
+    image: personalPortImage,
     description:
       "A personal portfolio website to showcase my projects and skills.",
     technologies: ["JavaScript", "CSS", "HTML", "React"],
@@ -120,7 +125,7 @@ const dataportfolio = [
   },
   {
     title: "Leetcode Solutions",
-    image: devimImage,
+    image: leetImage,
     description:
       "A collection of my solutions to Leetcode problems for students and prospective SWE's to study",
     technologies: ["Python", "C++"],
@@ -128,7 +133,7 @@ const dataportfolio = [
   },
   {
     title: "Advent of Code Solutions",
-    image: devimImage,
+    image: aocImage,
     description:
       "A collection of my solutions to Advent of Code problems for students and prospective SWE's to study",
     technologies: ["Go-lang", "Rust"],
@@ -136,7 +141,7 @@ const dataportfolio = [
   },
   {
     title: "Deep ML Solutions",
-    image: devimImage,
+    image: deepMLImage,
     description:
       "A collection of my solutions to Deep-ML problems for students and prospective SWE's to study",
     technologies: ["Python"],
