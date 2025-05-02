@@ -74,7 +74,7 @@ const researcherExperience = [
 
 const workExperience = [
   {
-    title: "Five9 - Software Engineering Intern Product",
+    title: "Five9 - Software Engineer Intern Product",
     period: "Jun 2025 - Present",
     description: "",
   },
