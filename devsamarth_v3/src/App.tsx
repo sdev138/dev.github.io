@@ -7,7 +7,6 @@ import sdevImage from "./assets/sdevCropped.jpg";
 import cv from "./assets/resume/cv.pdf";
 
 // about imports
-import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import {
   meta,
@@ -18,6 +17,7 @@ import {
   workExperience,
   researcherExperience,
   contactConfig,
+  volunteeringExperience,
 } from "./content.tsx";
 
 function App() {
@@ -189,6 +189,23 @@ function App() {
             </Col>
             <Col lg={7}>
               {researcherExperience.map((data, i) => {
+                return (
+                  <div className="service_ py-4" key={i}>
+                    <h5 className="service__title">{data.title}</h5>
+                    <p className="service_desc">{data.period}</p>
+                    <p className="service_desc">{data.description}</p>
+                  </div>
+                );
+              })}
+            </Col>
+          </Row>
+          {/* Volunteering Experience */}
+          <Row className="sec_sp">
+            <Col lg={5}>
+              <h3 className="color_sec py-4">volunteering</h3>
+            </Col>
+            <Col lg={7}>
+              {volunteeringExperience.map((data, i) => {
                 return (
                   <div className="service_ py-4" key={i}>
                     <h5 className="service__title">{data.title}</h5>

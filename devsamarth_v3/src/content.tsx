@@ -74,29 +74,40 @@ const researcherExperience = [
 
 const workExperience = [
   {
-    title: "AstroSeed - Machine Learning Engineer",
-    period: "August 2023 - Present",
-    description:
-      "Created and refined different AI models to recognize health symptoms in vegetation. Developed multiple Convolutional Neural Networks to classify and identify certain symptoms in vegetation. Produced an accurate machine learning model, capable of identifying different plants and associated symptoms with a 98.57% accuracy.",
+    title: "Five9 - Software Engineering Intern Product",
+    period: "Jun 2025 - Present",
+    description: "",
   },
   {
-    title: "Machine Learning Club @ ASU - Head of Recruitment",
-    period: "November 2021 - March 2022",
+    title: "AstroSeed - Machine Learning Engineer",
+    period: "August 2023 - May 2024",
     description:
-      "Recruited over 500 technical developers and students. Held and produced many different student lectures. Managed and directed over 10 events and technical competitions.",
+      "Produced an accurate CNN model capable of identifying different plants and associated symptoms with a 98.57% accuracy",
   },
   {
     title: "Private Tennis Instructor",
     period: "May 2020 - August 2021",
     description: "Taught tennis to multiple age groups and skill levels",
   },
-  {
-    title: "OTTA United - Cofounder | President and Director of Marketing",
-    period: "June 2018 - November 2019",
-    description:
-      "Cofounded a nonprofit, and currently operating since the summer of 2018 (formerly known as Bayreach). Created a social network providing a secure network for students and teachers, managing user data. Created a network of high schools in the FUHSD school district to join program. Hosted a lecture by Stanford Psychology Professor, Dr. Lin, regarding mental health and student well being.",
-  },
 ];
+
+const volunteeringExperience = [
+  {
+    title: "Machine Learning Club @ ASU - Head of Recruitment",
+    period: "Nov 2021 - Mar 2022",
+    description: "Recruited technical developers, held student lectures, manage and directed events and competitions",
+  },
+  {
+    title: "OTTA United (Formerly Bayreach) - Co-Founder | President and Director of Marketing",
+    period: "Jun 2018 - Nov 2019",
+    description: "Created a social network, a secure network for students and teachers managing user data. Created a network of high schools in the FUHSD school district. Hosted a lecture by Stanford Professor Lin, regarding mental health and student well being",
+  },
+  {
+    title: "Tutorfly - Math Instructor",
+    period: "Jul 2018 - Jul 2019",
+    description: "Algebra 1 and Geometry Instructor for underpriviliged students, who had struggled in Math during the school year. Reduced the number of failing students from 40 to 2"
+  },
+]
 
 const dataportfolio = [
   {
@@ -153,6 +164,10 @@ const contactConfig = {
   YOUR_EMAIL: "samarthdev138@gmail.com",
   github: "https://github.com/sdev138",
   linkedin: "https://www.linkedin.com/in/samarth-dev/",
+  twitter: "",
+  bluesky: "",
+  gscholar: "",
+  cv: "",
   description: "Feel free to contact me and keep in touch ✌🏾",
 };
 
@@ -171,6 +186,7 @@ export {
   worktimeline,
   workExperience,
   researcherExperience,
+  volunteeringExperience,
   introdata,
   contactConfig,
   socialprofils,
