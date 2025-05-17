@@ -132,7 +132,7 @@ const dataportfolio = [
     description:
       "A personal portfolio website to showcase my projects and skills.",
     technologies: ["JavaScript", "CSS", "HTML", "React"],
-    url: "https://devsamarth.com",
+    url: "https://github.com/sdev138/dev.github.io"
   },
   {
     title: "Leetcode Solutions",
