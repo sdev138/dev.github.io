@@ -4,7 +4,7 @@ import "./App.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
 import sdevImage from "./assets/sdevCropped.jpg";
-import cv from "./assets/resume/cv.pdf";
+import cv from "./assets/resume/Samarth Dev's CV.pdf";
 
 // about imports
 import { Container, Row, Col } from "react-bootstrap";
@@ -233,7 +233,7 @@ function App() {
       <section id="projects" className="experiences">
         <Container className="About-header">
           <Row className="sec-sp">
-            <Col lg = {5}>
+            <Col lg={5}>
               <h2 className="color_sec py-4">projects</h2>
             </Col>
           </Row>
@@ -242,27 +242,31 @@ function App() {
           <ul><h2 className="color_sec py-4">Projects</h2></ul>
         </Col> */}
         <Col lg={7} className="d-flex align-items-center">
-        <div className="projects-grid">
-          {dataportfolio.map((project, index) => (
-            <div key={index} className="project-card" onClick={() => window.open(project.url, '_blank')}>
-              <h3>{project.title}</h3>
-              {/* Would probably delete, trying to install image */}
-              <img
-                src={project.image}
-                alt="repo image"
-                className="repo-image"
-              />
-              <p>{project.description}</p>
-              <div className="tech-stack">
-                {project.technologies.map((tech, techIndex) => (
-                  <span key={techIndex} className="tech-tag">
-                    {tech}
-                  </span>
-                ))}
+          <div className="projects-grid">
+            {dataportfolio.map((project, index) => (
+              <div
+                key={index}
+                className="project-card"
+                onClick={() => window.open(project.url, "_blank")}
+              >
+                <h3>{project.title}</h3>
+                {/* Would probably delete, trying to install image */}
+                <img
+                  src={project.image}
+                  alt="repo image"
+                  className="repo-image"
+                />
+                <p>{project.description}</p>
+                <div className="tech-stack">
+                  {project.technologies.map((tech, techIndex) => (
+                    <span key={techIndex} className="tech-tag">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
         </Col>
       </section>
       <br />
