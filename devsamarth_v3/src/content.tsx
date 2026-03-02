@@ -10,14 +10,14 @@ const logoText = "Samarth Dev";
 
 const meta = {
   title: "Samarth Dev",
-  description: "I am a Software Engineer Intern working @ Five9",
+  description: "I am a Software Engineer working @ Five9",
 };
 
 const introdata = {
   title: "Samarth Dev",
-  title2: "Software Engineer Intern @ Five9",
+  title2: "Software Engineer @ Five9",
   animated: {
-    first: "Software Engineer Intern",
+    first: "Software Engineer",
     second: "Machine Learning Engineer",
     third: "Human Computer Interactions",
     fourth: "AI Researcher",
@@ -26,7 +26,7 @@ const introdata = {
     seventh: "Forza Lewis Hamilton",
   },
   description:
-    "Currently working for Five9 as a Software Engineer intern, on the AI Insights Team. Previously worked at a startup called AstroSeed as a Machine Learning Engineer where I created a recognition agent that can calculate the health of a plant.",
+    "Currently working for Five9 as a Software Engineer, on the AI Insights Team. Previously worked at a startup called AstroSeed as a Machine Learning Engineer where I created a recognition agent that can calculate the health of a plant.",
   description2:
     "My hobbies include contributing to open-source projects, this includes DEVim, a custom Neovim distribution as well as tinkering with different Linux distros.",
   your_img_url: sdevImage,
@@ -74,9 +74,9 @@ const researcherExperience = [
 
 const workExperience = [
   {
-    title: "Five9 - Software Engineer Intern",
+    title: "Five9 - Software Engineer",
     period: "Jun 2025 - Present",
-    description: "Working under Product Engineering at the AI Insights Team. Responsible for deploying models to different call centers, manage multiple microservices, and handle customer issues",
+    description: "Working under Product Engineering at the AI Insights Team. Responsible for deploying models to different call centers, manage multiple microservices, and handle customer issues. Responsible for the deployment of Llama familty models, and many features for Gen AI Studio. Also the Service Owner for the Monolith Architecture for Insights",
   },
   {
     title: "AstroSeed - Machine Learning Engineer",

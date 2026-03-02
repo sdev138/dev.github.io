@@ -4,7 +4,7 @@ import "./App.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
 import sdevImage from "./assets/sdevCropped.jpg";
-import cv from "./assets/resume/Samarth Dev's CV.pdf";
+import cv from "./assets/resume/Samarth Dev's Resume.pdf";
 
 // about imports
 import { Container, Row, Col } from "react-bootstrap";
