@@ -7,7 +7,7 @@ import sdevImage from "./assets/sdevCropped.jpg";
 import cv from "./assets/resume/Samarth Dev's Resume.pdf";
 
 // about imports
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import {
   meta,
   introdata,
@@ -129,149 +129,112 @@ function App() {
             <title> About | {meta.title}</title>
             <meta name="description" content={meta.description} />
           </Helmet>
-          {/* About Me title */}
-          {/* <Row className="mb-5 mt-3 pt-md-3">
-            <Col lg="8">
-              <h1 className="display-4 mb-4">About me</h1>
-              <hr className="t_border my-4 ml-0 text-left" />
-            </Col>
-          </Row> */}
           {/* Education (University) */}
-          <Row className=" sec_sp">
-            <Col lg={5}>
-              <h3 className="color_sec py-4">
-                <a
-                  href="https://www.asu.edu"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  education
-                </a>
-              </h3>
-            </Col>
-            <Col lg={7}>
-              <table className="table caption-top">
-                <tbody>
-                  {worktimeline.map((data, i) => {
-                    return (
-                      <tr key={i}>
-                        <th scope="row">{data.jobtitle}</th>
-                        <td>{data.where}</td>
-                        <td>{data.date}</td>
-                      </tr>
-                    );
-                  })}
-                </tbody>
-              </table>
-            </Col>
-          </Row>
+          <div className="sec_sp">
+            <h3 className="color_sec">
+              <a
+                href="https://www.asu.edu"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                education
+              </a>
+            </h3>
+            {worktimeline.map((data, i) => {
+              return (
+                <div className="experience-entry" key={i}>
+                  <h5 className="experience-entry__title">{data.jobtitle}</h5>
+                  <p className="experience-entry__period">
+                    {data.where} &middot; {data.date}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
           {/* Work Experience */}
-          <Row className="sec_sp">
-            <Col lg={5}>
-              <h3 className="color_sec py-4">work experience</h3>
-            </Col>
-            <Col lg={7}>
-              {workExperience.map((data, i) => {
-                return (
-                  <div className="service_ py-4" key={i}>
-                    <h5 className="service__title">{data.title}</h5>
-                    <p className="service_desc">{data.period}</p>
-                    <p className="service_desc">{data.description}</p>
-                  </div>
-                );
-              })}
-            </Col>
-          </Row>
+          <div className="sec_sp">
+            <h3 className="color_sec">work experience</h3>
+            {workExperience.map((data, i) => {
+              return (
+                <div className="experience-entry" key={i}>
+                  <h5 className="experience-entry__title">{data.title}</h5>
+                  <p className="experience-entry__period">{data.period}</p>
+                  <p className="experience-entry__desc">{data.description}</p>
+                </div>
+              );
+            })}
+          </div>
           {/* Research Experience */}
-          <Row className="sec_sp">
-            <Col lg={5}>
-              <h3 className="color_sec py-4">research experience</h3>
-            </Col>
-            <Col lg={7}>
-              {researcherExperience.map((data, i) => {
-                return (
-                  <div className="service_ py-4" key={i}>
-                    <h5 className="service__title">{data.title}</h5>
-                    <p className="service_desc">{data.period}</p>
-                    <p className="service_desc">{data.description}</p>
-                  </div>
-                );
-              })}
-            </Col>
-          </Row>
+          <div className="sec_sp">
+            <h3 className="color_sec">research experience</h3>
+            {researcherExperience.map((data, i) => {
+              return (
+                <div className="experience-entry" key={i}>
+                  <h5 className="experience-entry__title">{data.title}</h5>
+                  <p className="experience-entry__period">{data.period}</p>
+                  <p className="experience-entry__desc">{data.description}</p>
+                </div>
+              );
+            })}
+          </div>
           {/* Volunteering Experience */}
-          <Row className="sec_sp">
-            <Col lg={5}>
-              <h3 className="color_sec py-4">volunteering</h3>
-            </Col>
-            <Col lg={7}>
-              {volunteeringExperience.map((data, i) => {
-                return (
-                  <div className="service_ py-4" key={i}>
-                    <h5 className="service__title">{data.title}</h5>
-                    <p className="service_desc">{data.period}</p>
-                    <p className="service_desc">{data.description}</p>
-                  </div>
-                );
-              })}
-            </Col>
-          </Row>
+          <div className="sec_sp">
+            <h3 className="color_sec">volunteering</h3>
+            {volunteeringExperience.map((data, i) => {
+              return (
+                <div className="experience-entry" key={i}>
+                  <h5 className="experience-entry__title">{data.title}</h5>
+                  <p className="experience-entry__period">{data.period}</p>
+                  <p className="experience-entry__desc">{data.description}</p>
+                </div>
+              );
+            })}
+          </div>
           {/* Research Interests */}
-          <Row className="sec_sp">
-            <Col lg={5}>
-              <h3 className="color_sec py-4">{dataabout.title}</h3>
-            </Col>
-            <Col lg={7} className="d-flex align-items-center">
-              <div>
-                <p>{dataabout.aboutme}</p>
-              </div>
-            </Col>
-          </Row>
+          <div className="sec_sp">
+            <h3 className="color_sec">{dataabout.title}</h3>
+            <p className="experience-entry__desc">{dataabout.aboutme}</p>
+          </div>
         </Container>
       </section>
       {/* Projects sections */}
       <section id="projects" className="experiences">
         <Container className="About-header">
-          <Row className="sec-sp">
-            <Col lg={5}>
-              <h2 className="color_sec py-4">projects</h2>
-            </Col>
-          </Row>
-        </Container>
-        {/* <Col lg={5}>
-          <ul><h2 className="color_sec py-4">Projects</h2></ul>
-        </Col> */}
-        <Col lg={7} className="d-flex align-items-center">
-          <div className="projects-grid">
-            {dataportfolio.map((project, index) => (
-              <div
-                key={index}
-                className="project-card"
-                onClick={() => window.open(project.url, "_blank")}
-              >
-                <h3>{project.title}</h3>
-                {/* Would probably delete, trying to install image */}
-                <img
-                  src={project.image}
-                  alt="repo image"
-                  className="repo-image"
-                />
-                <p>{project.description}</p>
-                <div className="tech-stack">
-                  {project.technologies.map((tech, techIndex) => (
-                    <span key={techIndex} className="tech-tag">
-                      {tech}
-                    </span>
-                  ))}
+          <div className="projects-heading">
+            <h2 className="color_sec">projects</h2>
+          </div>
+          <div className="project-pods">
+            {dataportfolio.map((project) => (
+              <article className="project-pod" key={project.url}>
+                <div className="project-pod__content">
+                  <h3>{project.title}</h3>
+                  <p>{project.description}</p>
+                  <ul className="project-pod__tech">
+                    {project.technologies.map((tech) => (
+                      <li key={tech}>{tech}</li>
+                    ))}
+                  </ul>
                 </div>
-              </div>
+                <a
+                  className="project-pod__cta"
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Open ${project.title} project in a new tab`}
+                >
+                  <span>View project</span>
+                  <span className="project-pod__arrow" aria-hidden="true">
+                    &gt;
+                  </span>
+                </a>
+              </article>
             ))}
           </div>
-        </Col>
+        </Container>
       </section>
       <br />
       <br />
-      <p className="projects-grid">{contactConfig.description}</p>
+      <p>{contactConfig.description}</p>
       <br />
       <br />
       <br />

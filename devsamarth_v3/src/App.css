@@ -293,9 +293,36 @@ section {
     margin-bottom: calc(3rem + 5.128vw);
 }
 
-.table td,
-.table th {
-    color: var(--text-color);
+.experiences .color_sec {
+    border-bottom: 1px solid var(--text-color);
+    padding-bottom: 0.75rem;
+}
+
+.experience-entry {
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #444444;
+}
+
+.experience-entry:last-child {
+    border-bottom: none;
+}
+
+.experience-entry__title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.experience-entry__period {
+    color: #777777;
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+}
+
+.experience-entry__desc {
+    line-height: 1.6;
+    max-width: 70ch;
 }
 
 .t_border {
@@ -352,11 +379,6 @@ section {
     font-size: 45px;
 }
 
-.service__title {
-    padding: 8px 0;
-    border-bottom: solid 2px var(--secondary-color);
-}
-
 .service-section .service-category-title {
     padding-bottom: 4px;
 }
@@ -366,23 +388,6 @@ section {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 20px;
-}
-  
-.service_ {
-    background: var(--bg-color);
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-  
-.service__title {
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-}
-  
-.service_desc {
-    margin-bottom: 8px;
-    line-height: 1.6;
 }
 
 /*! CSS Used keyframes */
@@ -414,53 +419,118 @@ section {
 }
 
 /* Projects sections */
-/* Projects Styles */
-.projects-grid {
+.projects-heading {
+    margin-bottom: 2rem;
+}
+
+.project-pods {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.25rem;
+}
+
+.project-pod {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: end;
     gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    background-color: #e9ebef;
+    color: #111318;
+    border: 1px solid #d2d6dc;
+    border-radius: 22px;
+    padding: clamp(1.5rem, 3vw, 2rem);
+    transition:
+        border-color 0.2s ease,
+        transform 0.2s ease;
 }
 
-.project-card {
-    /* background-color: #1a1a1a; */
-    background-color: #0c0c0c;
-    border: 3px solid var(--text-color);
+.project-pod:hover {
     border-color: #ffffff;
-    padding: 2rem;
-    /* Formerly 45px */
-    border-radius: 50px;
-    transition: transform 0.3s ease;
+    transform: translateY(-2px);
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
+.project-pod h3 {
+    color: #111318;
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem;
 }
 
-.project-card h3 {
-    font-size: 1.5rem;
-    margin-top: 0;
-    margin-bottom: 1rem;
+.project-pod p {
+    color: #3d4655;
+    line-height: 1.55;
+    margin: 0 0 1.25rem;
+    max-width: 62ch;
 }
 
-.tech-stack {
+.project-pod__tech {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-top: 1.5rem;
+    gap: 0.45rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.tech-tag {
-    background-color: #333;
-    border-color: #ffffff;
-    padding: 0.3rem 0.8rem;
-    border-radius: 20px;
+.project-pod__tech li {
+    background-color: #d8e1f6;
+    border-radius: 999px;
+    color: #233a67;
     font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.3rem 0.75rem;
 }
 
-.repo-image {
-    width: 320px;
-    height: auto;
-    border-radius: 8px;
+.project-pod__cta {
+    align-items: center;
+    align-self: end;
+    background-color: #111318;
+    border: 1px solid #ffffff;
+    border-radius: 999px;
+    color: #ffffff !important;
+    display: inline-flex;
+    font-size: 0.95rem;
+    font-weight: 700;
+    gap: 0.8rem;
+    min-height: 52px;
+    padding: 0.45rem 1.1rem 0.45rem 1.25rem;
+    text-decoration: none;
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+    white-space: nowrap;
+}
+
+.project-pod__cta:hover {
+    background-color: #292e37;
+    color: #ffffff !important;
+    transform: translateX(2px);
+}
+
+.project-pod__cta:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 3px;
+}
+
+.project-pod__arrow {
+    color: #ffffff;
+    font-size: 1.35rem;
+    line-height: 1;
+}
+
+@media (max-width: 640px) {
+    .project-pod {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .project-pod__cta {
+        justify-self: start;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .project-pod,
+    .project-pod__cta {
+        transition: none;
+    }
 }
