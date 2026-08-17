@@ -10,23 +10,24 @@ const logoText = "Samarth Dev";
 
 const meta = {
   title: "Samarth Dev",
-  description: "I am a Software Engineer working @ Five9",
+  description: "I am a Product Manager working @ Five9",
 };
 
 const introdata = {
   title: "Samarth Dev",
-  title2: "Software Engineer @ Five9",
+  title2: "Product Manager @ Five9",
   animated: {
-    first: "Software Engineer",
-    second: "Machine Learning Engineer",
-    third: "Human Computer Interactions",
-    fourth: "AI Researcher",
-    fifth: "Tennis Player",
-    sixth: "Forza Ferrari",
-    seventh: "Forza Lewis Hamilton",
+    first: "Product Manager",
+    second: "Software Engineer",
+    third: "Machine Learning Engineer",
+    fourth: "Human Computer Interactions",
+    fifth: "AI Researcher",
+    sixth: "Tennis Player",
+    seventh: "Forza Ferrari",
+    eighth: "Forza Lewis Hamilton",
   },
   description:
-    "Currently working for Five9 as a Software Engineer, on the AI Insights Team. Previously worked at a startup called AstroSeed as a Machine Learning Engineer where I created a recognition agent that can calculate the health of a plant.",
+    "Currently working for Five9 as a Product Manager, handling our AI Solutions Products. Previously worked at a startup called AstroSeed as a Machine Learning Engineer where I created a recognition agent that can calculate the health of a plant; and AGI Inc. where I built out their entire infra for training and distilling models.",
   description2:
     "My hobbies include contributing to open-source projects, this includes DEVim, a custom Neovim distribution as well as tinkering with different Linux distros.",
   your_img_url: sdevImage,
@@ -74,40 +75,53 @@ const researcherExperience = [
 
 const workExperience = [
   {
-    title: "Five9 - Software Engineer",
-    period: "Jun 2025 - Present",
-    description: "Working under Product Engineering at the AI Insights Team. Responsible for deploying models to different call centers, manage multiple microservices, and handle customer issues. Responsible for the deployment of Llama familty models, and many features for Gen AI Studio. Also the Service Owner for the Monolith Architecture for Insights",
+    title: "Product Manager, Five9",
+    period: "June 2026 - Present",
+    description:
+      "Product Manager for AI Insights, GenAI Studio, Agent Assist, Knowledge Studio & Transcription Services. Revamped AI Insights with an entire new design and workflow. Handled customer feedback sessiosn and demos. Handled and resolved customer issues with sales, Technical Account Managers, and Professional Service personnel. Introduced and in charge of the integration of Claude, OpenClaw, & Hermes Agents into the workflows of Product Engineering and Product Management. Created different prototypes and fature that would be groomed in AI Insights, GenAI Studio, and Knowledge Studio. Dictate necessary UI components and design teams for each product. Created an automated dashboard for the Product Management org to handle OKRs and QBR prep, and led an initiative with two other Directors to standardize OKR metrics across the org for executive staff and the Board of Directors.",
   },
   {
-    title: "AstroSeed - Machine Learning Engineer",
+    title: "Software Engineer, Five9",
+    period: "Jun 2025 - May 2026",
+    description:
+      "Working under Product Engineering at the AI Insights Team. Responsible for deploying models to different call centers, manage multiple microservices, and handle customer issues. Responsible for the deployment of Llama familty models, and many features for Gen AI Studio. Also the Service Owner for the Monolith Architecture for Insights",
+  },
+  {
+    title: "Machine Learning Engineer, AGI Inc",
+    period: "April 2026 - May 2026 (Part Time)",
+    description:
+      "Built out entire infrastructure pipeline to train and distill LLMs and SLMs. Quantized and trained different qwen models to run locally on a smartphone",
+  },
+  {
+    title: "Machine Learning Engineer, AstroSeed",
     period: "August 2023 - May 2024",
     description:
       "Produced an accurate CNN model capable of identifying different plants and associated symptoms with a 98.57% accuracy",
   },
   {
-    title: "Private Tennis Instructor",
-    period: "May 2020 - August 2021",
-    description: "Taught tennis to multiple age groups and skill levels",
+    title:
+      "Machine Learning Researcher, NSIN - National Security Innovation Network",
+    period: "Jan 2022 - May 2023",
+    description:
+      "Researched image classifiers that can determine the state of the exterior hull of a ship, and manage protocols of a ship increasing a crew's productivity and safety when in dangerous environments.",
   },
 ];
 
 const volunteeringExperience = [
   {
-    title: "Machine Learning Club @ ASU - Head of Recruitment",
-    period: "Nov 2021 - Mar 2022",
-    description: "Recruited technical developers, held student lectures, manage and directed events and competitions",
-  },
-  {
-    title: "OTTA United (Formerly Bayreach) - Co-Founder | President and Director of Marketing",
+    title:
+      "OTTA United (Formerly Bayreach) - Co-Founder | President and Director of Marketing",
     period: "Jun 2018 - Nov 2019",
-    description: "Created a social network, a secure network for students and teachers managing user data. Created a network of high schools in the FUHSD school district. Hosted a lecture by Stanford Professor Lin, regarding mental health and student well being",
+    description:
+      "Created a social network, a secure network for students and teachers managing user data. Created a network of high schools in the FUHSD school district. Hosted a lecture by Stanford Professor Lin, regarding mental health and student well being",
   },
   {
     title: "Tutorfly - Math Instructor",
     period: "Jul 2018 - Jul 2019",
-    description: "Algebra 1 and Geometry Instructor for underpriviliged students, who had struggled in Math during the school year. Reduced the number of failing students from 40 to 2"
+    description:
+      "Algebra 1 and Geometry Instructor for underpriviliged students, who had struggled in Math during the school year. Reduced the number of failing students from 40 to 2",
   },
-]
+];
 
 const dataportfolio = [
   {
@@ -127,12 +141,12 @@ const dataportfolio = [
     url: "https://github.com/sdev138/Repo-Recommender-AI",
   },
   {
-    title: "Personal Portfolio",
+    title: "Personal Portfolio Repo",
     image: personalPortImage,
     description:
       "A personal portfolio website to showcase my projects and skills.",
     technologies: ["JavaScript", "CSS", "HTML", "React"],
-    url: "https://github.com/sdev138/dev.github.io"
+    url: "https://github.com/sdev138/dev.github.io",
   },
   {
     title: "Leetcode Solutions",
