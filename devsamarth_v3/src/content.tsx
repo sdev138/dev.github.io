@@ -98,13 +98,6 @@ const workExperience = [
     description:
       "Produced an accurate CNN model capable of identifying different plants and associated symptoms with a 98.57% accuracy",
   },
-  {
-    title:
-      "Machine Learning Researcher, NSIN - National Security Innovation Network",
-    period: "Jan 2022 - May 2023",
-    description:
-      "Researched image classifiers that can determine the state of the exterior hull of a ship, and manage protocols of a ship increasing a crew's productivity and safety when in dangerous environments.",
-  },
 ];
 
 const volunteeringExperience = [
