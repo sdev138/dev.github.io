@@ -72,13 +72,13 @@ const workExperience = [
     title: "Product Manager, Five9",
     period: "June 2026 - Present",
     description:
-      "Product Manager for AI Insights, GenAI Studio, Agent Assist, Knowledge Studio & Transcription Services. Revamped AI Insights with an entire new design and workflow. Handled customer feedback sessiosn and demos. Handled and resolved customer issues with sales, Technical Account Managers, and Professional Service personnel. Introduced and in charge of the integration of Claude, OpenClaw, & Hermes Agents into the workflows of Product Engineering and Product Management. Created different prototypes and fature that would be groomed in AI Insights, GenAI Studio, and Knowledge Studio. Dictate necessary UI components and design teams for each product. Created an automated dashboard for the Product Management org to handle OKRs and QBR prep, and led an initiative with two other Directors to standardize OKR metrics across the org for executive staff and the Board of Directors.",
+      "Product Manager for AI Insights, GenAI Studio, Agent Assist, Knowledge Studio & Transcription Services. Revamped AI Insights with an entire new design and workflow. Handled customer feedback sessiosn and demos. Handled and resolved customer issues with sales, Technical Account Managers, and Professional Service personnel. Created different prototypes and features that would be groomed in AI Insights, GenAI Studio, and Knowledge Studio. Dictate necessary UI components and designs for each product. Created an automated dashboard for the Product Management org to handle OKRs and QBR prep, and led an initiative with two other Directors to standardize OKR metrics across the org for executive staff and the Board of Directors.",
   },
   {
     title: "Software Engineer, Five9",
     period: "Jun 2025 - May 2026",
     description:
-      "Working under Product Engineering at the AI Insights Team. Responsible for deploying models to different call centers, manage multiple microservices, and handle customer issues. Responsible for the deployment of Llama familty models, and many features for Gen AI Studio. Also the Service Owner for the Monolith Architecture for Insights",
+      "Working under Product Engineering at the AI Insights Team. Responsible for deploying models to different call centers, manage multiple microservices, and handle customer issues. Responsible for the deployment of Llama familty models, and many features for Gen AI Studio. Also the Service Owner for the Monolith Architecture & testing environment for AI Insights",
   },
   {
     title: "Machine Learning Engineer, AGI Inc",
