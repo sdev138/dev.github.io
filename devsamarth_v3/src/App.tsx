@@ -4,7 +4,7 @@ import "./App.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
 import sdevImage from "./assets/sdevCropped.jpg";
-import cv from "./assets/resume/Samarth Dev's Resume.pdf";
+import cv from "./assets/resume/Samarth Dev Resume.pdf";
 
 // about imports
 import { Container } from "react-bootstrap";
@@ -93,6 +93,10 @@ function App() {
                       /{" "}
                       <a href="https://github.com/sdev138">
                         <u>github</u>
+                      </a>{" "}
+                      /{" "}
+                      <a href="https://gitlab.com/samarthdev138">
+                        <u>gitlab</u>
                       </a>{" "}
                       /{" "}
                       <a href="https://www.linkedin.com/in/samarth-dev">
