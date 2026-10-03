@@ -9,7 +9,7 @@ const meta = {
 
 const introdata = {
   title: "Samarth Dev",
-  title2: "Product Manager @ Five9",
+  title2: "Product Manager & Software Engineer",
   description:
     "Currently working for Five9 as a Product Manager, handling our AI Solutions Products. Previously worked at a startup called AstroSeed as a Machine Learning Engineer where I created a recognition agent that can calculate the health of a plant; and AGI Inc. where I built out their entire infra for training and distilling models.",
   description2:
@@ -24,7 +24,10 @@ const links = [
   { label: "LinkedIn", href: "https://www.linkedin.com/in/samarth-dev" },
   { label: "Bluesky", href: "https://bsky.app/profile/samarthdev.bsky.social" },
   { label: "Twitter", href: "https://x.com/chinnu_chan_" },
-  { label: "Google Scholar", href: "https://scholar.google.com/citations?user=ByJ5jz4AAAAJ&hl=en" },
+  {
+    label: "Google Scholar",
+    href: "https://scholar.google.com/citations?user=ByJ5jz4AAAAJ&hl=en",
+  },
 ];
 
 const dataabout = {
