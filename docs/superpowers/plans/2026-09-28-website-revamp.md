@@ -37,7 +37,13 @@
 
 - [x] Add the app as the root Bun workspace and provide root commands forwarding into it:
   ```json
-  { "workspaces": ["devsamarth_v3"], "scripts": { "dev": "bun run --cwd devsamarth_v3 dev", "build": "bun run --cwd devsamarth_v3 build" } }
+  {
+    "workspaces": ["devsamarth_v3"],
+    "scripts": {
+      "dev": "bun run --cwd devsamarth_v3 dev",
+      "build": "bun run --cwd devsamarth_v3 build"
+    }
+  }
   ```
 - [x] Use Bun to run the app's Vite, TypeScript, ESLint, and gh-pages binaries. Replace Bootstrap/typewriter/Helmet dependencies made obsolete by the redesign with `react-markdown` and `remark-gfm`; align React types with React 18.
 - [x] Install with `bun install`, keep a single root `bun.lock`, and remove the superseded app npm lockfile.

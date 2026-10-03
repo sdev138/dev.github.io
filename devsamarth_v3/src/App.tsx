@@ -94,14 +94,14 @@ function App() {
 
   function onLinkClick(event: MouseEvent<HTMLDivElement>) {
     if (event.defaultPrevented || event.button !== 0 || event.metaKey ||
-        event.ctrlKey || event.shiftKey || event.altKey) return;
+      event.ctrlKey || event.shiftKey || event.altKey) return;
     const link = event.target instanceof Element ? event.target.closest("a") : null;
     if (!link || !link.hasAttribute("href") || link.hasAttribute("download") ||
-        (link.target && link.target !== "_self")) return;
+      (link.target && link.target !== "_self")) return;
     const destination = new URL(link.href, window.location.href);
     // In-page anchors (including the keyboard skip link) retain native scrolling.
     if (destination.origin === window.location.origin &&
-        destination.pathname === window.location.pathname && destination.hash) return;
+      destination.pathname === window.location.pathname && destination.hash) return;
 
     event.preventDefault();
     void jump().then((landed) => {
@@ -155,9 +155,9 @@ function App() {
 
         {path === "/" ? <Home /> :
           path === "/work" ? <Work /> :
-          path === "/products" ? <Products /> :
-          path === "/blog" ? <Blog /> :
-          post ? <BlogPost post={post} /> : <NotFound />}
+            path === "/products" ? <Products /> :
+              path === "/blog" ? <Blog /> :
+                post ? <BlogPost post={post} /> : <NotFound />}
       </main>
 
       <footer className="site-footer">

@@ -1,68 +1,106 @@
 @font-face {
-    font-family: "Inter";
-    src: url("/inter-latin.woff2") format("woff2");
-    font-style: normal;
-    font-weight: 400 700;
-    font-display: swap;
+  font-family: "Inter";
+  src: url("/inter-latin.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
 }
 
 :root {
-    color-scheme: light;
-    --paper: #fafafa;
-    --surface: #efefef;
-    --ink: #333333;
-    --body: #565656;
-    --muted: #707070;
-    --line: #d6d6d6;
-    --text: #111111;
-    --text-muted: rgba(0, 0, 0, 0.4);
-    --font-body: "Inter", "Helvetica Neue", sans-serif;
-    --font-utility: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
-    font-family: var(--font-body);
-    color: var(--text);
-    background: var(--paper);
-    font-synthesis: none;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  color-scheme: light;
+  --paper: #fafafa;
+  --surface: #efefef;
+  --ink: #333333;
+  --body: #565656;
+  --muted: #707070;
+  --line: #d6d6d6;
+  --text: #111111;
+  --text-muted: rgba(0, 0, 0, 0.4);
+  --font-body: "Inter", "Helvetica Neue", sans-serif;
+  --font-utility: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--paper);
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 body {
-    margin: 0;
-    min-width: 280px;
-    font-size: 0.875rem;
-    font-weight: 460;
-    line-height: 1.25rem;
-    letter-spacing: -0.00563rem;
+  margin: 0;
+  min-width: 280px;
+  font-size: 0.875rem;
+  font-weight: 460;
+  line-height: 1.25rem;
+  letter-spacing: -0.00563rem;
 }
 
-::selection { color: var(--paper); background: var(--body); }
+::selection {
+  color: var(--paper);
+  background: var(--body);
+}
 
-h1, h2, h3, p, ul, ol { margin: 0; }
-h1, h2, h3 { font-size: inherit; font-weight: 500; line-height: inherit; }
-p { color: inherit; }
-strong { font-weight: 600; }
+h1,
+h2,
+h3,
+p,
+ul,
+ol {
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  font-size: inherit;
+  font-weight: 500;
+  line-height: inherit;
+}
+p {
+  color: inherit;
+}
+strong {
+  font-weight: 600;
+}
 
 a {
-    color: inherit;
-    text-decoration-color: var(--line);
-    text-underline-offset: 4px;
-    text-decoration-thickness: 1px;
-    transition: color 120ms, background-color 120ms, text-decoration-color 120ms;
+  color: inherit;
+  text-decoration-color: var(--line);
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+  transition:
+    color 120ms,
+    background-color 120ms,
+    text-decoration-color 120ms;
 }
 
-a:hover { text-decoration-color: var(--ink); }
+a:hover {
+  text-decoration-color: var(--ink);
+}
 
-:focus-visible { outline: 2px solid var(--ink); outline-offset: 5px; }
+:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 5px;
+}
 
-button, input { font: inherit; }
-img { max-width: 100%; height: auto; }
+button,
+input {
+  font: inherit;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after {
-        animation: none !important;
-        transition: none !important;
-        scroll-behavior: auto !important;
-    }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
 }

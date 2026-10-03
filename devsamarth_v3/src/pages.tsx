@@ -2,12 +2,21 @@ import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import posts, { type Post } from "virtual:posts";
 import {
-  introdata, links, workExperience, researcherExperience,
-  volunteeringExperience, worktimeline, dataabout, dataportfolio,
+  introdata,
+  links,
+  workExperience,
+  researcherExperience,
+  volunteeringExperience,
+  worktimeline,
+  dataabout,
+  dataportfolio,
 } from "./content";
 
 const dateFormatter = new Intl.DateTimeFormat("en-US", {
-  month: "short", day: "numeric", year: "numeric", timeZone: "UTC",
+  month: "short",
+  day: "numeric",
+  year: "numeric",
+  timeZone: "UTC",
 });
 
 export function Home() {
@@ -18,7 +27,11 @@ export function Home() {
         <p>{introdata.description2}</p>
       </div>
       <ul className="contact-links" aria-label="Find me elsewhere">
-        {links.map(({ label, href }) => <li key={label}><a href={href}>{label}</a></li>)}
+        {links.map(({ label, href }) => (
+          <li key={label}>
+            <a href={href}>{label}</a>
+          </li>
+        ))}
       </ul>
       {/* <div className="directory" aria-label="Explore the website">
         <a href="/work"><span>Work</span><span className="directory-description">Experience & research</span><span aria-hidden="true">↗</span></a>
@@ -29,7 +42,10 @@ export function Home() {
   );
 }
 
-function Timeline({ title, entries }: {
+function Timeline({
+  title,
+  entries,
+}: {
   title: string;
   entries: { title: string; period: string; description: string }[];
 }) {
@@ -56,9 +72,14 @@ export function Work() {
     <div className="work-content">
       <Timeline title="Experience" entries={workExperience} />
       <Timeline title="Research" entries={researcherExperience} />
-      <Timeline title="Education" entries={worktimeline.map((entry) => ({
-        title: entry.jobtitle, period: entry.date, description: entry.where,
-      }))} />
+      <Timeline
+        title="Education"
+        entries={worktimeline.map((entry) => ({
+          title: entry.jobtitle,
+          period: entry.date,
+          description: entry.where,
+        }))}
+      />
       <Timeline title="Volunteering" entries={volunteeringExperience} />
       <section className="work-section research-interests">
         <h2 className="section-label">{dataabout.title}</h2>
@@ -74,10 +95,15 @@ export function Products() {
       {dataportfolio.map((project) => (
         <li key={project.url}>
           <a className="product" href={project.url}>
-            <div className="product-title"><h2>{project.title}</h2><span aria-hidden="true">↗</span></div>
+            <div className="product-title">
+              <h2>{project.title}</h2>
+              <span aria-hidden="true">↗</span>
+            </div>
             <p>{project.description}</p>
             <ul className="technologies" aria-label="Technologies">
-              {project.technologies.map((technology) => <li key={technology}>{technology}</li>)}
+              {project.technologies.map((technology) => (
+                <li key={technology}>{technology}</li>
+              ))}
             </ul>
           </a>
         </li>
@@ -96,7 +122,9 @@ export function Blog() {
               <h2>{post.title}</h2>
               {post.description && <p>{post.description}</p>}
             </div>
-            <time dateTime={post.date}>{dateFormatter.format(new Date(post.date))}</time>
+            <time dateTime={post.date}>
+              {dateFormatter.format(new Date(post.date))}
+            </time>
           </a>
         </li>
       ))}
@@ -112,21 +140,39 @@ export function Blog() {
 export function BlogPost({ post }: { post: Post }) {
   return (
     <article className="post">
-      <time className="post-date" dateTime={post.date}>{dateFormatter.format(new Date(post.date))}</time>
+      <time className="post-date" dateTime={post.date}>
+        {dateFormatter.format(new Date(post.date))}
+      </time>
       <div className="markdown">
-        <Markdown remarkPlugins={[remarkGfm]} components={{
-          table: ({ children }) => (
-            <div className="table-scroll" tabIndex={0} role="region" aria-label="Scrollable table">
-              <table>{children}</table>
-            </div>
-          ),
-          img: ({ src, alt, title }) => <img src={src} alt={alt ?? ""} title={title} loading="lazy" />,
-        }}>{post.body}</Markdown>
+        <Markdown
+          remarkPlugins={[remarkGfm]}
+          components={{
+            table: ({ children }) => (
+              <div
+                className="table-scroll"
+                tabIndex={0}
+                role="region"
+                aria-label="Scrollable table"
+              >
+                <table>{children}</table>
+              </div>
+            ),
+            img: ({ src, alt, title }) => (
+              <img src={src} alt={alt ?? ""} title={title} loading="lazy" />
+            ),
+          }}
+        >
+          {post.body}
+        </Markdown>
       </div>
     </article>
   );
 }
 
 export function NotFound() {
-  return <p className="not-found">Try the navigation above, or <a href="/">return home</a>.</p>;
+  return (
+    <p className="not-found">
+      Try the navigation above, or <a href="/">return home</a>.
+    </p>
+  );
 }
