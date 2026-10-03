@@ -88,15 +88,15 @@ npm run dev          # Vite dev server, hot reload, prints URL (default http://l
 Everything lives in three files under `devsamarth_v3/src/`. There is **no components/
 directory** — no nav bar and no footer exist.
 
-| File | Purpose |
-|---|---|
-| `src/main.tsx` | React entry point (`createRoot` + StrictMode) |
-| `src/App.tsx` | **All JSX/components** (~240 lines). One `App()` component. |
-| `src/App.css` | **All component styles** (~488 lines) |
-| `src/index.css` | Theme variables (`:root` CSS custom properties) + global resets |
+| File              | Purpose                                                                              |
+| ----------------- | ------------------------------------------------------------------------------------ |
+| `src/main.tsx`    | React entry point (`createRoot` + StrictMode)                                        |
+| `src/App.tsx`     | **All JSX/components** (~240 lines). One `App()` component.                          |
+| `src/App.css`     | **All component styles** (~488 lines)                                                |
+| `src/index.css`   | Theme variables (`:root` CSS custom properties) + global resets                      |
 | `src/content.tsx` | **All site data** (no JSX): meta, intro, experience, volunteering, projects, contact |
-| `src/assets/` | Images: `sdevCropped.jpg` (portrait), 6 project images (**now unused**), resume PDFs |
-| `public/CNAME` | `devsamarth.com` — custom domain for GitHub Pages |
+| `src/assets/`     | Images: `sdevCropped.jpg` (portrait), 6 project images (**now unused**), resume PDFs |
+| `public/CNAME`    | `devsamarth.com` — custom domain for GitHub Pages                                    |
 
 **Data flow:** `index.html` → `main.tsx` → `App.tsx` (maps over arrays imported from
 `content.tsx`). To change any text, edit `content.tsx` only.
@@ -106,6 +106,7 @@ directory** — no nav bar and no footer exist.
 ## 4. Design System
 
 ### Colors (`src/index.css` `:root`)
+
 - `--bg-color: #0c0c0c` (page background, near-black)
 - `--primary-color: #0d0d0d` (page side borders, 10px solid left/right)
 - `--secondary-color: #fff` (headings / accents)
@@ -113,6 +114,7 @@ directory** — no nav bar and no footer exist.
 - Project rows invert this: white `#ffffff` rows with `#111111` text on the black page.
 
 ### Typography
+
 - Single font: **Roboto** (system fallback — there is NO font file, no Google Fonts
   import anywhere). Headings inherit it too.
 - Section headings are lowercase white text (`h2`/`h3` with class `color_sec`).
@@ -121,6 +123,7 @@ directory** — no nav bar and no footer exist.
   body 1rem.
 
 ### Layout
+
 - Body has `padding-top: 60px` and 10px solid side borders.
 - `.About-header` (in `App.css`): the shared content container — `max-width: 900px`,
   centered, `padding: 0 20px`. **Every section's content must stay inside this to keep
@@ -140,6 +143,7 @@ after **https://cresta.com/careers** (white inverted rows with a small link bar 
 bottom-right corner).
 
 ### 5.1 `content.tsx`
+
 - Removed the `image:` field from all 6 entries in `dataportfolio`.
 - Removed the 6 now-unused image imports (`devimImage`, `deepMLImage`, `aocImage`,
   `leetImage`, `repoRecallImage`, `personalPortImage`).
@@ -147,9 +151,10 @@ bottom-right corner).
   they were intentionally left in place; safe to delete but not required.
 
 ### 5.2 `App.tsx`
+
 - **Experiences section (`#experiences`)**: replaced every Bootstrap `Row/Col lg={5}/lg={7}`
   split with a single left-aligned `<div className="sec_sp">` per block: an `<h3
-  className="color_sec">` heading followed by flat `.experience-entry` divs. The
+className="color_sec">` heading followed by flat `.experience-entry` divs. The
   education `<table>` was converted to the same entry pattern (title, then
   "institution · dates" on the muted period line).
 - **Projects section (`#projects`)**: the grid/card markup was replaced with stacked
@@ -163,6 +168,7 @@ bottom-right corner).
   longer used anywhere.
 
 ### 5.3 `App.css`
+
 - **Added** `.experience-entry`, `.experience-entry__title`, `.__period`, `.__desc`
   (flat typographic list; periods muted `#777777`; descriptions `max-width: 70ch`,
   `line-height: 1.6`).
@@ -180,6 +186,7 @@ bottom-right corner).
   delete them unless asked (surgical-changes rule).
 
 ### 5.4 Other session facts
+
 - `npm install` was run (deps were missing). `node_modules/` now exists.
 - `npm run lint` and `npm run build` both pass.
 - Screenshots from verification live in `/tmp/opencode/` (`hero.png`,
@@ -235,7 +242,7 @@ These were consciously out of scope for this redesign — ask the user before do
 - The repo root package.json (Bun) is unrelated to the website — never run `bun` there
   expecting website behavior.
 
-----------------------------
+---
 
 ## 9. Session Update — Aug 16, 2026, 8:18pm
 
@@ -245,12 +252,14 @@ Two CSS-only changes were made to `src/App.css` (no JSX or data changes). Both
 `npm run lint` and `npm run build` pass.
 
 1. **Thin white line under every section title.** Added:
+
    ```css
    .experiences .color_sec {
-       border-bottom: 1px solid var(--text-color);
-       padding-bottom: 0.75rem;
+     border-bottom: 1px solid var(--text-color);
+     padding-bottom: 0.75rem;
    }
    ```
+
    Applies to all six section headings (education, work experience, research
    experience, volunteering, research interests, projects) because every heading uses
    `color_sec` inside a section with class `experiences` (both `#experiences` and
@@ -259,12 +268,12 @@ Two CSS-only changes were made to `src/App.css` (no JSX or data changes). Both
 2. **Gray divider line between experience entries.** Modified `.experience-entry`:
    ```css
    .experience-entry {
-       margin-top: 1.5rem;
-       padding-bottom: 1.5rem;
-       border-bottom: 1px solid #444444;
+     margin-top: 1.5rem;
+     padding-bottom: 1.5rem;
+     border-bottom: 1px solid #444444;
    }
    .experience-entry:last-child {
-       border-bottom: none;
+     border-bottom: none;
    }
    ```
    The line sits below each entry's description and above the next entry's title.
@@ -277,6 +286,7 @@ Two CSS-only changes were made to `src/App.css` (no JSX or data changes). Both
 ### 9.2 Pending work — project pod redesign (BLOCKED)
 
 The user requested the project pods be redesigned to match two reference screenshots:
+
 - `devsamarth_v3/Pod_Design_Images/Cresta_Pod_Design.png` (how sections/pods are
   separated)
 - `devsamarth_v3/Pod_Design_Images/Decagon_Pod_Design.png` (how compact rows should be)
@@ -284,6 +294,7 @@ The user requested the project pods be redesigned to match two reference screens
 **This work is NOT done.** The current model has no image input, so the two PNGs could
 not be viewed. Do NOT attempt the pod redesign by guessing. The user was offered three
 unblock paths and has not yet chosen one:
+
 1. User describes the pod design in text (per-row layout, fields, link placement,
    padding/compactness, row separation).
 2. User confirms working from the live sites (`cresta.com/careers`, `decagon.ai/careers`)
@@ -300,7 +311,7 @@ unblock paths and has not yet chosen one:
   user asks to commit.
 - Nothing has been committed. Do not commit or deploy unless explicitly asked.
 
-----------------------------
+---
 
 ## 10. Project Pod Redesign Complete — Aug 17, 2026
 
@@ -312,6 +323,7 @@ arrow control.
 ### 10.1 Visual reference artifacts
 
 Two reviewable artifacts now live in `Pod_Design_Images/`:
+
 - `Project_Pod_Mockup.png` — rendered desktop design preview.
 - `Project_Pod_Mockup.svg` — editable source for the preview.
 

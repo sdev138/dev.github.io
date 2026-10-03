@@ -9,11 +9,11 @@ const meta = {
 
 const introdata = {
   title: "Samarth Dev",
-  title2: "Product Manager @ Five9",
+  title2: "Product Manager & Software Engineer",
   description:
-    "Currently working for Five9 as a Product Manager, handling our AI Solutions Products. Previously worked at a startup called AstroSeed as a Machine Learning Engineer where I created a recognition agent that can calculate the health of a plant; and AGI Inc. where I built out their entire infra for training and distilling models.",
+    "Currently building multiple products. Previously I worked at Five9 as a PM and SWE handling their AI Products; AGI Inc. where I built out their entire infra for training and distilling models, and AstroSeed where I built a recognition agent that can calculate the health of a plant.",
   description2:
-    "My hobbies include contributing to open-source projects, this includes DEVim, a custom Neovim distribution as well as tinkering with different Linux distros.",
+    "My hobbies include contributing to open-source projects, this includes DEVim, a custom Neovim distribution as well as tinkering with different Linux distros, and playing RPGs and JRPGs. I'm also really into F1, where every Sunday I watch my goat get sabotaged (LH & Ferrari) ",
 };
 
 const links = [
@@ -24,7 +24,10 @@ const links = [
   { label: "LinkedIn", href: "https://www.linkedin.com/in/samarth-dev" },
   { label: "Bluesky", href: "https://bsky.app/profile/samarthdev.bsky.social" },
   { label: "Twitter", href: "https://x.com/chinnu_chan_" },
-  { label: "Google Scholar", href: "https://scholar.google.com/citations?user=ByJ5jz4AAAAJ&hl=en" },
+  {
+    label: "Google Scholar",
+    href: "https://scholar.google.com/citations?user=ByJ5jz4AAAAJ&hl=en",
+  },
 ];
 
 const dataabout = {

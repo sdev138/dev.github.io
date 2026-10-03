@@ -10,7 +10,7 @@ Write your post here. Copy this file, give it a descriptive filename such as
 
 ## A section heading
 
-Use **bold**, *italics*, [links](https://devsamarth.com), and ordinary Markdown.
+Use **bold**, _italics_, [links](https://devsamarth.com), and ordinary Markdown.
 
 > A thought worth setting apart.
 
@@ -21,6 +21,6 @@ Use **bold**, *italics*, [links](https://devsamarth.com), and ordinary Markdown.
 const greeting = "Hello, world.";
 ```
 
-| Topic | Notes |
-| --- | --- |
+| Topic   | Notes                               |
+| ------- | ----------------------------------- |
 | Writing | Markdown is rendered automatically. |

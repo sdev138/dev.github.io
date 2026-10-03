@@ -25,16 +25,16 @@ bun run preview    # Inspect the production build locally
 
 ## Edit the content and design
 
-| File | Responsibility |
-| --- | --- |
-| `src/content.tsx` | Biography, social links, CV, work, research, education, projects |
-| `src/App.tsx` | Shared navigation, cube, route selection, page headers, footer |
-| `src/pages.tsx` | Home, work timeline, products, blog index, Markdown article |
-| `src/index.css` | Neutral colour tokens, fonts, base styles, reduced motion |
-| `src/App.css` | Layout, cube faces/rotation, responsive pages, Markdown typography |
-| `src/posts/*.md` | Blog posts with YAML front matter |
-| `vite.config.ts` | Markdown loading and static route entry generation |
-| `public/CNAME` | Existing custom domain, `devsamarth.com` |
+| File              | Responsibility                                                     |
+| ----------------- | ------------------------------------------------------------------ |
+| `src/content.tsx` | Biography, social links, CV, work, research, education, projects   |
+| `src/App.tsx`     | Shared navigation, cube, route selection, page headers, footer     |
+| `src/pages.tsx`   | Home, work timeline, products, blog index, Markdown article        |
+| `src/index.css`   | Neutral colour tokens, fonts, base styles, reduced motion          |
+| `src/App.css`     | Layout, cube faces/rotation, responsive pages, Markdown typography |
+| `src/posts/*.md`  | Blog posts with YAML front matter                                  |
+| `vite.config.ts`  | Markdown loading and static route entry generation                 |
+| `public/CNAME`    | Existing custom domain, `devsamarth.com`                           |
 
 The cube rotates with CSS. For ordinary same-tab links, navigation waits for its
 320 ms jump to land. A newer click replaces the pending jump. Keyboard navigation,

@@ -2,6 +2,7 @@
 
 2026-10-01 — Grey blog-entry descriptions
 ---
+
 - Samarth requested that blog-list description metadata use the same grey as the homepage's “Product Manager @ Five9” subtitle.
 - Added `color: var(--text-muted)` to `.post-link p` in `devsamarth_v3/src/App.css`, reusing the homepage subtitle's existing color token.
 - Local Chromium reproduced the original mismatch and verified both blog-entry descriptions now match the subtitle's `rgba(0, 0, 0, 0.4)` color at 1440px and 390px, including hover. No browser errors; `bun run build` passed.
@@ -9,6 +10,7 @@
 
 2026-09-29 — Match benji.org's full text presentation
 ---
+
 - Samarth reported that the font/tracking-only changes were barely noticeable and requested a thorough rendered comparison with `https://benji.org/`. Markdown styling changes are explicitly permitted because the renderer inherits global CSS. No added tests, commits, pushes, or deployments were requested.
 - Compared actual browser styles, screenshots, font rendering, and shared-text metrics. The reference uses 14px/20px Inter at weight 460, `-0.09008px` tracking (`-0.00563rem`), #111 text, 14px/500-weight page headings, a 550px desktop reading column, 24px mobile gutters, and 16px paragraph gaps. The previous local text was 16px/28px at weight 400 with a 680px column and 30px headings.
 - Updated `devsamarth_v3/src/index.css` and `src/App.css` to use those type metrics, compact headings, paragraph/list spacing, matching secondary text, and consistent Inter labels/dates. Updated the current README/handoff with the typography baseline.
@@ -22,6 +24,7 @@
 
 2026-09-29 — Compact letter spacing
 ---
+
 - Samarth requested the compact, document-like letter spacing of `https://benji.org/`. Inspected its rendered typography: Inter, 14px body text, and `-0.09008px` tracking (approximately `-0.0064em`).
 - Added `letter-spacing: -0.0064em` to the site body in `src/index.css`. Removed the expanded letter-spacing rules from page titles, navigation, section labels, and responsive navigation in `src/App.css` so they inherit the compact tracking.
 - Verified `bun run build` and `git diff --check`. Local Chromium confirmed compact spacing on all four main pages at 1440px, 390px, and 320px, with no overflow or browser errors. Screenshots: `/tmp/opencode/tight-tracking-1440.png` and `/tmp/opencode/tight-tracking-390.png` (ephemeral).
@@ -29,24 +32,28 @@
 
 2026-09-29 — Inter typography
 ---
+
 - Samarth requested Inter as the website font. Replaced the primary font declaration and preload with locally hosted `public/inter-latin.woff2`, supporting weights 400–700. Replaced the obsolete Plex font assets with Inter and its SIL Open Font License, and updated the current README/handoff.
 - Verified `bun run build` and `git diff --check`. Local Chromium confirmed actual Inter webfont rendering on Home, Work, Products, and Blog at 1440px, 390px, and 320px, with no horizontal overflow or page errors.
 - Desktop/mobile screenshots: `/tmp/opencode/inter-1440.png` and `/tmp/opencode/inter-390.png` (ephemeral). The task-owned Bun/Vite server on 5180 was stopped. No tests added or commits/pushes/deployments performed for this font change.
 
 2026-09-29 — Cube diagonal direction corrected
 ---
+
 - Samarth requested upper-left-to-lower-right rotation and authorized a local commit without pushing. Changed the rotation axis in `devsamarth_v3/src/App.css` from `(1, 1, 0)` to `(-1, 1, 0)`.
 - Local Chromium measurements confirmed the front face moves right and down. The cube is still 22px with a 10-second rotation, and reduced motion disables the animation.
 - `bun run build` and the CSS diff-check passed; local browser inspection reported no page errors. The task's Bun/Vite server on port 5180 was stopped. Existing edits in `src/App.tsx` and `src/pages.tsx` belong to the user and are excluded from this commit.
 
 2026-09-28 — Cube motion refinement
 ---
+
 - Samarth requested a smaller cube with a faster diagonal rotation. Updated `devsamarth_v3/src/App.css`: 22px sides (previously 26px), a 10-second loop (previously 18 seconds), and `rotate3d(1, 1, 0, ...)` for diagonal-axis rotation.
 - Adjusted face depth to 11px and recentered the smaller cube and ground line. The shared animation applies across all pages.
 - Verified `bun run build` and CSS diff-check, inspected four rotation phases in local Chromium, and confirmed navigation, reduced motion, and zero browser errors. The local Bun/Vite server was stopped afterward. No tests added or commits/deployments performed.
 
 2026-09-28 — Revamp complete and verified locally
 ---
+
 - Bun workspace is configured at the repo root with one `bun.lock`; root commands forward to the app. Use `bun install`, `bun run dev`, `bun run lint`, `bun run build`, `bun run preview`, and `bun run deploy`.
 - New app structure: `src/App.tsx` for shell/cube/navigation, `src/pages.tsx` for page bodies/Markdown, existing `src/content.tsx` for portfolio text/links, `src/posts/*.md` for writing, and `vite.config.ts` for Markdown loading/static route entries.
 - White/grey NieR menu styling uses locally served IBM Plex Sans, a small CSS 3D cube, and a 320 ms jump before same-tab navigation. Reduced motion, keyboard focus, modified clicks, and browser history are supported.
@@ -61,6 +68,7 @@
 
 2026-09-28 — Website revamp in progress
 ---
+
 - Samarth supplied `Website_Revamp.md` and requested implementation: Bun, existing gh-pages deployment, white/grey NieR-inspired design, rotating/jumping cube, and Work/Products/Markdown Blog routes.
 - Samarth explicitly deferred universal blog-view counts: “Hold off on the blog-view counts, just continue with the rest of the implementation”. No counter/backend work is in the active scope.
 - No added tests; verify with Bun and local desktop/mobile browser checks. Do not commit or deploy; stop local servers afterward.
@@ -71,4 +79,5 @@
 
 2026-09-28
 ---
+
 - Markdown content in this workspace may use YAML front matter; Markdown tables require pipe syntax.
