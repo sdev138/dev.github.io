@@ -25,6 +25,7 @@ export function Home() {
       <div className="biography">
         <p>{introdata.description}</p>
         <p>{introdata.description2}</p>
+        <p>{introdata.description3}</p>
       </div>
       <ul className="contact-links" aria-label="Find me elsewhere">
         {links.map(({ label, href }) => (

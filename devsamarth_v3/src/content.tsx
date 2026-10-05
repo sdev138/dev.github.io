@@ -1,4 +1,4 @@
-import cv from "./assets/resume/Samarth Dev Resume.pdf";
+import cv from "./assets/resume/Samarth_Dev_Product_Manager_Resume.pdf";
 
 const logoText = "Samarth Dev";
 
@@ -11,8 +11,10 @@ const introdata = {
   title: "Samarth Dev",
   title2: "Product Manager",
   description:
-    "Currently building multiple products. Previously worked at Five9 as a PM and SWE handling their AI Products. At AGI Inc. I built out their entire infra for training and distilling models, and at AstroSeed I built a recognition agent that can calculate the health of a plant and deployed it to a drone.",
+    'Currently building multiple products. Previously worked at Five9 as a PM and SWE handling their AI Products. At AGI Inc. I built out their entire infra for training and distilling models, and at AstroSeed I built a recognition agent that can calculate the health of a plant and deployed it to a drone.',
   description2:
+    'I\'ve also done research as part of a joint research and product development program with the NSIN and ASU called "Hacking 4 Defense". Their, I did a lot of pmf and product development to eventually develop an mvp to deploy software to existing drones and UAVs to assess the damage to a hull of a ship. Worked a lot on drones.',
+  description3:
     "My hobbies include contributing to open-source projects, this includes DEVim, a custom Neovim distribution as well as tinkering with different Linux distros, and playing RPGs and JRPGs. I'm also really into F1, Forza Ferrari.",
 };
 
