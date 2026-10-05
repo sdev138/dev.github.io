@@ -4,14 +4,14 @@ const logoText = "Samarth Dev";
 
 const meta = {
   title: "Samarth Dev",
-  description: "I am a Product Manager working @ Five9",
+  description: "Product Manager & Product Builder",
 };
 
 const introdata = {
   title: "Samarth Dev",
-  title2: "Product Manager & Software Engineer",
+  title2: "Product Manager",
   description:
-    "Currently building multiple products. Previously I worked at Five9 as a PM and SWE handling their AI Products; AGI Inc. where I built out their entire infra for training and distilling models, and AstroSeed where I built a recognition agent that can calculate the health of a plant.",
+    "Currently building multiple products. Previously worked at Five9 as a PM and SWE handling their AI Products. At AGI Inc. I built out their entire infra for training and distilling models, and at AstroSeed I built a recognition agent that can calculate the health of a plant and deployed it to a drone.",
   description2:
     "My hobbies include contributing to open-source projects, this includes DEVim, a custom Neovim distribution as well as tinkering with different Linux distros, and playing RPGs and JRPGs. I'm also really into F1, where every Sunday I watch my goat get sabotaged (LH & Ferrari) ",
 };
