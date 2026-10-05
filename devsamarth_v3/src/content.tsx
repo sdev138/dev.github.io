@@ -13,7 +13,7 @@ const introdata = {
   description:
     "Currently building multiple products. Previously worked at Five9 as a PM and SWE handling their AI Products. At AGI Inc. I built out their entire infra for training and distilling models, and at AstroSeed I built a recognition agent that can calculate the health of a plant and deployed it to a drone.",
   description2:
-    "My hobbies include contributing to open-source projects, this includes DEVim, a custom Neovim distribution as well as tinkering with different Linux distros, and playing RPGs and JRPGs. I'm also really into F1, where every Sunday I watch my goat get sabotaged (LH & Ferrari) ",
+    "My hobbies include contributing to open-source projects, this includes DEVim, a custom Neovim distribution as well as tinkering with different Linux distros, and playing RPGs and JRPGs. I'm also really into F1, Forza Ferrari.",
 };
 
 const links = [
