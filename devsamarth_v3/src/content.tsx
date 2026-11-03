@@ -11,7 +11,7 @@ const introdata = {
   title: "Samarth Dev",
   title2: "Product Manager",
   description:
-    'Currently building multiple products. Previously worked at Five9 as a PM and SWE handling their AI Products. At AGI Inc. I built out their entire infra for training and distilling models, and at AstroSeed I built a recognition agent that can calculate the health of a plant and deployed it to a drone.',
+    "Currently building multiple products. Previously worked at Five9 as a PM and SWE handling their AI Products. At AGI Inc. I built out their entire infra for training and distilling models, and at AstroSeed I built a recognition agent that can calculate the health of a plant and deployed it to a drone.",
   description2:
     'I\'ve also done research as part of a joint research and product development program with the NSIN and ASU called "Hacking 4 Defense". Their, I did a lot of pmf and product development to eventually develop an mvp to deploy software to existing drones and UAVs to assess the damage to a hull of a ship. Worked a lot on drones.',
   description3:
@@ -111,6 +111,36 @@ const volunteeringExperience = [
 ];
 
 const dataportfolio = [
+  {
+    title: "Gen AI Insights",
+    description:
+      "AI Insights is a customized dashboard that ingests millions of call transcripts, classifies calls into a series of topics, and generates summaries for said calls.",
+    technologies: [
+      "Java, RxJava, React, JavaScript, SpringBoot, Llama AI, Gemini, Claude, GPT",
+    ],
+    url: "https://www.five9.com/platform/insights-and-analytics/ai-insights",
+  },
+  {
+    title: "GenAI Studio",
+    description:
+      "AI platform, prompt management hub, to generate human-like responses and insights.",
+    technologies: ["Java, RxJava, React, JavaScript, Llama, Gemini, GPT"],
+    url: "https://www.five9.com/platform/agentic-orchestration/genai-studio",
+  },
+  {
+    title: "Knowledge Studio",
+    description:
+      "AI RAG (Retrieval Augmented Generation) platform designed to provide context for contact centers, and deliver contextual information to customers through virtual and live agent interactions.",
+    technologies: ["Java, RxJava, React, JavaScript, Llama, Gemini, GPT"],
+    url: "https://www.five9.com/platform/data-services/ai-knowledge",
+  },
+  {
+    title: "AI Agent Assist",
+    description:
+      "AI powered platform designed to empower agents to be more informed, engaged, and focused on a customer's needs with real-time intelligence and automation coaching.",
+    technologies: ["Java, RxJava, SpringBoot"],
+    url: "https://www.five9.com/platform/self-service-and-engagement/agent-assist",
+  },
   {
     title: "DEVim",
     description:
