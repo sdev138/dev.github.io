@@ -1,5 +1,13 @@
 # Memory
 
+2026-11-05 — Repository contributor guide
+---
+
+- Added root `AGENTS.md` with repository structure, Bun commands, coding style, blog conventions, local verification, commit/PR guidance, and agent instructions.
+- Confirmed commands against both package manifests and conventions against source, README files, and recent Git history. No automated test framework or coverage requirement is configured.
+- Guide is 394 words. Documentation validation checks title, length, command availability, referenced paths, and whitespace; no application code changed.
+- Work is on `repository-contributor-guide-codex`, forked from `main`; leave integration to the repository owner. The requested autoprompt skill was not found in installed skill locations.
+
 2026-10-01 — Grey blog-entry descriptions
 ---
 
