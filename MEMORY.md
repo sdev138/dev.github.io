@@ -1,5 +1,13 @@
 # Memory
 
+2026-11-05 — Website design reference
+---
+
+- Added root `DESIGN.md` documenting the implemented visual identity, cube favicon and CSS geometry, palette, typography, layout, navigation, content patterns, Markdown, responsiveness, and accessibility.
+- Included the existing SVG mark, a schematic page wireframe, and relative links to source files. Values were checked against `index.css`, `App.css`, `App.tsx`, `pages.tsx`, and `public/cube.svg`.
+- Documentation-only change; validate relative links, implementation values, and whitespace. No application code, assets, dependencies, or runtime behavior changed.
+- Started from `repository-contributor-guide-codex`; commit on a task branch, merge back to that feature branch, and delete the task branch. Leave `main` untouched.
+
 2026-11-05 — Repository contributor guide
 ---
 
